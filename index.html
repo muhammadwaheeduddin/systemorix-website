@@ -67,6 +67,9 @@ section .intro{color:var(--muted);max-width:62ch;margin:18px 0 0}
 .contact .btn{margin-top:32px}
 .callline{margin:20px 0 0;font-weight:500}.callline a{color:var(--accent)}
 .contact .btn{margin-top:20px}
+
+.pic{aspect-ratio:16/8;border-radius:10px;border:1px solid var(--line);display:grid;place-items:center;margin-bottom:18px;color:var(--accent);background:radial-gradient(circle at 25% 15%,color-mix(in srgb,var(--accent) 20%,transparent),transparent 70%),var(--surface)}
+.pic svg{width:76px;height:76px;fill:none;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
 footer{border-top:1px solid var(--line);padding:40px 0;color:var(--muted);font-size:15px}
 footer .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px}
 footer strong{display:block;color:var(--ink);margin-bottom:4px}
@@ -100,15 +103,16 @@ footer strong{display:block;color:var(--ink);margin-bottom:4px}
 
 <section id="mobile-apps"><div class="wrap">
 <h2>Mobile applications for your business</h2>
-<p class="intro">Mobile and web apps for retail, food service and distribution businesses, built to work on phones, tablets and counters, and connected to your ERP when you need it.</p>
+<p class="intro">Mobile and web apps for retail, manufacturing and distribution businesses, built to work on phones, tablets and counters, and connected to your ERP when you need it.</p>
 <div class="services">
-<div class="svc"><span class="ic" aria-hidden="true">🧾</span><h3>Point of Sale (POS)</h3><p>Fast billing, barcode scanning, receipts, discounts, shift reports and multi-branch sales tracking.</p></div>
-<div class="svc"><span class="ic" aria-hidden="true">🍽️</span><h3>Restaurant management</h3><p>Table orders, kitchen display, menu management, split bills and daily sales reports.</p></div>
-<div class="svc"><span class="ic" aria-hidden="true">🏭</span><h3>Manufacturing &amp; production</h3><p>Work orders, BOM, shop-floor entry, production tracking, material issue and output reporting.</p></div>
-<div class="svc"><span class="ic" aria-hidden="true">📦</span><h3>Inventory & stock app</h3><p>Real-time stock counts, low-stock alerts, purchase entry and warehouse transfers on a phone.</p></div>
-<div class="svc"><span class="ic" aria-hidden="true">🛵</span><h3>Order & delivery app</h3><p>Customer ordering, order tracking, rider assignment and delivery status updates.</p></div>
-<div class="svc"><span class="ic" aria-hidden="true">🧑‍💼</span><h3>Sales & field app</h3><p>Orders, visits, collections and customer records for teams working outside the office.</p></div>
-<div class="svc"><span class="ic" aria-hidden="true">🔄</span><h3>ERP-connected apps</h3><p>Mobile apps that link to Oracle EBS or Fusion for scanning, approvals and live transaction data.</p></div>
+<div class="svc"><div class="pic" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><rect x="14" y="8" width="36" height="16" rx="2"/><rect x="8" y="28" width="48" height="26" rx="3"/><path d="M18 36h4M30 36h4M42 36h4M18 44h4M30 44h4M42 44h4"/></svg></div><h3>Point of Sale (POS)</h3><p>Fast billing, barcode scanning, receipts, discounts, shift reports and multi-branch sales tracking.</p></div>
+<div class="svc"><div class="pic" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><path d="M8 54V26l14 8V26l14 8V16h14v38zM6 54h52M40 40h4M40 47h4"/></svg></div><h3>Manufacturing &amp; production</h3><p>Work orders, BOM, shop-floor entry, production tracking, material issue and output reporting.</p></div>
+<div class="svc"><div class="pic" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><path d="M32 8l20 10v24L32 56 12 42V18zM12 18l20 10 20-10M32 28v28"/></svg></div><h3>Inventory & stock app</h3><p>Real-time stock counts, low-stock alerts, purchase entry and warehouse transfers on a phone.</p></div>
+<div class="svc"><div class="pic" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><rect x="6" y="20" width="30" height="22" rx="2"/><path d="M36 28h12l10 9v5H36z"/><circle cx="16" cy="46" r="5"/><circle cx="46" cy="46" r="5"/></svg></div><h3>Order & delivery app</h3><p>Customer ordering, order tracking, rider assignment and delivery status updates.</p></div>
+<div class="svc"><div class="pic" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><rect x="18" y="6" width="28" height="52" rx="5"/><path d="M25 42l6-8 5 5 6-9M28 51h8"/></svg></div><h3>Sales & field app</h3><p>Orders, visits, collections and customer records for teams working outside the office.</p></div>
+<div class="svc"><div class="pic" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><rect x="8" y="8" width="20" height="20" rx="2"/><rect x="36" y="8" width="20" height="20" rx="2"/><rect x="8" y="36" width="20" height="20" rx="2"/><path d="M14 14h8v8h-8zM42 14h8v8h-8zM14 42h8v8h-8zM36 36h8v8M52 36h4M36 52h8M50 46h6v10h-8"/></svg></div><h3>QR code gate pass</h3><p>Scan QR codes to issue and verify Inward (IGP) and Outward (OGP) gate passes, with a record of every material movement.</p></div>
+<div class="svc"><div class="pic" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><path d="M8 22h44M44 12l10 10-10 10M56 42H12M20 32L10 42l10 10"/></svg></div><h3>Inventory movements</h3><p>Track receipts, issues, transfers and adjustments between stores and locations with scan-based entry and movement history.</p></div>
+<div class="svc"><div class="pic" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><circle cx="14" cy="32" r="7"/><circle cx="50" cy="14" r="7"/><circle cx="50" cy="50" r="7"/><path d="M20 29l24-12M20 35l24 12"/></svg></div><h3>ERP-connected apps</h3><p>Mobile apps that link to Oracle EBS or Fusion for scanning, approvals and live transaction data.</p></div>
 </div>
 </div></section>
 
@@ -116,12 +120,12 @@ footer strong{display:block;color:var(--ink);margin-bottom:4px}
 <h2>IT services that keep your business running</h2>
 <p class="intro">Software, support and infrastructure delivered by the same team that understands your ERP, so your systems work together instead of in isolation.</p>
 <div class="services">
-<div class="svc"><span class="ic" aria-hidden="true">&lt;/&gt;</span><h3>Custom software &amp; web development</h3><p>Web applications, portals and internal tools built around how your teams actually work.</p></div>
-<div class="svc"><span class="ic" aria-hidden="true">🛠️</span><h3>IT support &amp; managed services</h3><p>Day-to-day system support, issue resolution, monitoring and maintenance for your IT environment.</p></div>
-<div class="svc"><span class="ic" aria-hidden="true">🌐</span><h3>Cloud &amp; infrastructure</h3><p>Cloud adoption, system migration, hosting and infrastructure planning for growing organizations.</p></div>
-<div class="svc"><span class="ic" aria-hidden="true">🔗</span><h3>Integration &amp; automation</h3><p>APIs, data exchange, process automation and custom solutions that connect ERP with your other systems.</p></div>
-<div class="svc"><span class="ic" aria-hidden="true">▤</span><h3>Reporting &amp; data</h3><p>Business reporting, data migration, transaction analysis and practical management information.</p></div>
-<div class="svc"><span class="ic" aria-hidden="true">🎓</span><h3>Training &amp; adoption</h3><p>User training and documentation that help teams adopt new systems with confidence.</p></div>
+<div class="svc"><div class="pic" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><path d="M22 16L6 32l16 16M42 16l16 16-16 16M37 10l-10 44"/></svg></div><h3>Custom software &amp; web development</h3><p>Web applications, portals and internal tools built around how your teams actually work.</p></div>
+<div class="svc"><div class="pic" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><path d="M12 38V32a20 20 0 0140 0v6"/><rect x="7" y="36" width="9" height="15" rx="3"/><rect x="48" y="36" width="9" height="15" rx="3"/><path d="M52 51c0 6-6 8-14 8"/></svg></div><h3>IT support &amp; managed services</h3><p>Day-to-day system support, issue resolution, monitoring and maintenance for your IT environment.</p></div>
+<div class="svc"><div class="pic" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><path d="M18 48a11 11 0 01-1-22 15 15 0 0129-3 12 12 0 012 25z"/></svg></div><h3>Cloud &amp; infrastructure</h3><p>Cloud adoption, system migration, hosting and infrastructure planning for growing organizations.</p></div>
+<div class="svc"><div class="pic" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><circle cx="32" cy="32" r="9"/><path d="M32 6v9M32 49v9M6 32h9M49 32h9M14 14l6 6M44 44l6 6M50 14l-6 6M20 44l-6 6"/></svg></div><h3>Integration &amp; automation</h3><p>APIs, data exchange, process automation and custom solutions that connect ERP with your other systems.</p></div>
+<div class="svc"><div class="pic" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><path d="M8 56h48M14 56V36M26 56V20M38 56V30M50 56V10"/></svg></div><h3>Reporting &amp; data</h3><p>Business reporting, data migration, transaction analysis and practical management information.</p></div>
+<div class="svc"><div class="pic" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><path d="M32 12L5 26l27 14 27-14zM16 33v13c0 4 8 8 16 8s16-4 16-8V33M59 26v16"/></svg></div><h3>Training &amp; adoption</h3><p>User training and documentation that help teams adopt new systems with confidence.</p></div>
 </div>
 </div></section>
 
@@ -129,10 +133,12 @@ footer strong{display:block;color:var(--ink);margin-bottom:4px}
 <h2>Oracle solutions built around your business</h2>
 <p class="intro">From implementation and configuration to support, integration and process automation, SYSTEMORIX helps organizations get more value from their ERP investment.</p>
 <div class="services">
-<div class="svc"><span class="ic" aria-hidden="true">☁️</span><h3>Oracle Fusion Cloud</h3><p>Functional consulting, implementation, configuration, testing, training and post-go-live support.</p></div>
-<div class="svc"><span class="ic" aria-hidden="true">◈</span><h3>Oracle EBS</h3><p>Oracle E-Business Suite consulting, enhancements, support, reporting and business process improvements.</p></div>
-<div class="svc"><span class="ic" aria-hidden="true">⚙️</span><h3>SCM &amp; Procurement</h3><p>Supply Chain, Purchasing, P2P, Supplier Management, Inventory and logistics process expertise.</p></div>
-<div class="svc"><span class="ic" aria-hidden="true">🏭</span><h3>Manufacturing</h3><p>Manufacturing process support covering work orders, BOM, WIP, costing and material availability.</p></div>
+<div class="svc"><div class="pic" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><path d="M18 48a11 11 0 01-1-22 15 15 0 0129-3 12 12 0 012 25z"/><path d="M25 34l6 6 10-11"/></svg></div><h3>Oracle Fusion Cloud</h3><p>Functional consulting, implementation, configuration, testing, training and post-go-live support.</p></div>
+<div class="svc"><div class="pic" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><ellipse cx="32" cy="14" rx="20" ry="7"/><path d="M12 14v36c0 4 9 7 20 7s20-3 20-7V14M12 32c0 4 9 7 20 7s20-3 20-7"/></svg></div><h3>Oracle EBS</h3><p>Oracle E-Business Suite consulting, enhancements, support, reporting and business process improvements.</p></div>
+<div class="svc"><div class="pic" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><path d="M5 10h9l7 31h30l6-22H17"/><circle cx="26" cy="51" r="3.5"/><circle cx="46" cy="51" r="3.5"/></svg></div><h3>SCM &amp; Procurement</h3><p>Supply Chain, Purchasing, P2P, Supplier Management, Inventory and logistics process expertise.</p></div>
+<div class="svc"><div class="pic" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><rect x="6" y="40" width="52" height="11" rx="5.5"/><rect x="12" y="22" width="14" height="14" rx="1"/><rect x="38" y="22" width="14" height="14" rx="1"/><path d="M6 12h52"/></svg></div><h3>Manufacturing</h3><p>Manufacturing process support covering work orders, BOM, WIP, costing and material availability.</p></div>
+<div class="svc"><div class="pic" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><circle cx="32" cy="32" r="24"/><path d="M40 23c-1-3-4-5-8-5-4 0-7 2-7 5.500s3 4.500 7 5.500 8 2 8 5.500-3 5.500-8 5.500c-4 0-7-2-8-5M32 12v6M32 46v6"/></svg></div><h3>Financials</h3><p>Oracle Financials support covering payables, receivables, general ledger, period close and financial reporting.</p></div>
+<div class="svc"><div class="pic" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><path d="M32 6c-9 0-16 7-16 16 0 12 16 30 16 30s16-18 16-30c0-9-7-16-16-16z"/><circle cx="32" cy="22" r="6"/><path d="M10 56h44"/></svg></div><h3>Logistics</h3><p>Logistics and inventory processes including shipping, material movement, warehouse transactions and delivery tracking.</p></div>
 </div>
 <h2 style="margin-top:72px;font-size:clamp(26px,3.4vw,38px)">Deep knowledge across core ERP processes</h2>
 <ul class="chips">
