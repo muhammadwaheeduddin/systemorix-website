@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SYSTEMORIX | IT Services & Oracle Solutions</title>
+<meta name="description" content="IT services and Oracle solutions: software development, IT support, cloud, Oracle Fusion Cloud and Oracle E-Business Suite consulting.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+:root{--bg:#f6f7f4;--surface:#ffffff;--ink:#12261f;--muted:#51625a;--line:#d9dfd8;--accent:#0b6b57;--accent-ink:#ffffff;--band:#12261f;--band-ink:#eef3ee;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1814;--surface:#15241e;--ink:#e8f0ea;--muted:#9bb0a4;--line:#274034;--accent:#4fd1a8;--accent-ink:#06231a;--band:#08110d;--band-ink:#e8f0ea}}
+:root[data-theme="dark"]{--bg:#0e1814;--surface:#15241e;--ink:#e8f0ea;--muted:#9bb0a4;--line:#274034;--accent:#4fd1a8;--accent-ink:#06231a;--band:#08110d;--band-ink:#e8f0ea}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans",system-ui,sans-serif;line-height:1.6;font-size:17px}
+h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",system-ui,sans-serif;line-height:1.08;margin:0;letter-spacing:-.02em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:20px 0;gap:16px;flex-wrap:wrap}
+.logo{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:22px;letter-spacing:.02em;text-decoration:none}
+nav a{margin-left:22px;text-decoration:none;color:var(--muted);font-size:15px}
+nav a:hover{color:var(--ink)}
+.hero{padding:56px 0 72px}
+.hero h1{font-size:clamp(40px,7vw,84px);font-weight:700;max-width:14ch}
+.hero p.lead{font-size:clamp(18px,2vw,21px);color:var(--muted);max-width:60ch;margin:28px 0 36px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 24px;border-radius:6px;text-decoration:none;font-weight:500;border:1.5px solid var(--ink)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn:hover{filter:brightness(1.1)}
+.flow{margin-top:64px;border-top:1px solid var(--line);padding-top:24px}
+.flow p{margin:0 0 14px;color:var(--muted);font-size:15px}
+.flow ol{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.flow li{display:flex;align-items:center;gap:8px;font-family:"Bricolage Grotesque",sans-serif;font-weight:500;font-size:clamp(15px,1.8vw,19px)}
+.flow li+li::before{content:"";width:22px;height:2px;background:var(--accent)}
+.facts{background:var(--band);color:var(--band-ink)}
+.facts dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px;margin:0;padding:36px 0}
+.facts dt{font-size:14px;opacity:.7}
+.facts dd{margin:4px 0 0;font-family:"Bricolage Grotesque",sans-serif;font-size:26px;font-weight:700}
+section{padding:88px 0}
+section h2{font-size:clamp(30px,4.2vw,48px);max-width:20ch}
+section .intro{color:var(--muted);max-width:62ch;margin:18px 0 0}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin-top:48px;border-top:1px solid var(--line)}
+.svc{padding:28px 28px 28px 0;border-bottom:1px solid var(--line)}
+.svc .ic{font-size:26px;display:block;margin-bottom:10px}
+.svc h3{font-size:22px;margin-bottom:8px}
+.svc p{margin:0;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:36px;padding:0;list-style:none}
+.chips li{background:var(--surface);border:1px solid var(--line);padding:8px 16px;border-radius:999px;font-size:15px}
+.about{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:start}
+.checks{list-style:none;padding:0;margin:28px 0 0}
+.checks li{padding:14px 0 14px 34px;border-top:1px solid var(--line);position:relative}
+.checks li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:700}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:28px}
+.panel h3{font-size:22px;margin-bottom:12px}
+.panel p{margin:0 0 12px;color:var(--muted)}
+.panel .steps{color:var(--ink);font-weight:500}
+.achieve{background:var(--band);color:var(--band-ink)}
+.achieve .grid{display:grid;grid-template-columns:1fr 1.2fr;gap:56px;align-items:center}
+.achieve .intro{color:var(--band-ink);opacity:.75}
+.achieve p{margin:0 0 16px}
+.qr{width:100%;max-width:200px;color:var(--band-ink);margin-bottom:24px}
+.gate{display:flex;gap:12px;margin-top:8px;flex-wrap:wrap}
+.gate span{border:1.5px solid var(--accent);color:var(--accent);padding:6px 14px;border-radius:6px;font-weight:500}
+.contact{text-align:left}
+.contact .btn{margin-top:32px}
+.callline{margin:20px 0 0;font-weight:500}.callline a{color:var(--accent)}
+.contact .btn{margin-top:20px}
+footer{border-top:1px solid var(--line);padding:40px 0;color:var(--muted);font-size:15px}
+footer .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px}
+footer strong{display:block;color:var(--ink);margin-bottom:4px}
+@media (max-width:760px){.about,.achieve .grid{grid-template-columns:1fr;gap:36px}nav a{margin:0 18px 0 0}.svc{padding-right:0}section{padding:64px 0}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<a class="logo" href="#top">SYSTEMORIX</a>
+<nav aria-label="Main"><a href="#it-services">IT services</a><a href="#mobile-apps">Mobile apps</a><a href="#services">Oracle solutions</a><a href="#about">About</a><a href="#achievement">Achievement</a><a href="#contact">Contact</a></nav>
+</header>
+<div class="hero" id="top">
+<h1>IT Services &amp; Oracle Solutions</h1>
+<p class="lead">SYSTEMORIX combines IT services with deep Oracle expertise. We build software and mobile apps, support your systems and deliver Oracle Fusion Cloud and Oracle E-Business Suite solutions across Supply Chain, Procurement, Manufacturing, Financials, Inventory and Logistics.</p>
+<div class="btns"><a class="btn primary" href="#contact">Discuss your project</a><a class="btn" href="#it-services">IT services</a><a class="btn" href="#mobile-apps">Mobile apps</a><a class="btn" href="#services">Oracle solutions</a></div>
+<div class="flow">
+<p>How a project runs, from first conversation to support</p>
+<ol><li>Requirements</li><li>Solution design</li><li>Configuration</li><li>Integration</li><li>Testing</li><li>Deployment</li><li>Training</li><li>Support</li></ol>
+</div>
+</div>
+</div>
+
+<div class="facts"><div class="wrap"><dl>
+<div><dt>Oracle experience</dt><dd>11+ years</dd></div>
+<div><dt>Core focus</dt><dd>IT &amp; ERP</dd></div>
+<div><dt>Delivery</dt><dd>Remote &amp; on-site</dd></div>
+<div><dt>Specialties</dt><dd>SCM, P2P, O2C</dd></div>
+</dl></div></div>
+
+<section id="mobile-apps"><div class="wrap">
+<h2>Mobile applications for your business</h2>
+<p class="intro">Mobile and web apps for retail, food service and distribution businesses, built to work on phones, tablets and counters, and connected to your ERP when you need it.</p>
+<div class="services">
+<div class="svc"><span class="ic" aria-hidden="true">🧾</span><h3>Point of Sale (POS)</h3><p>Fast billing, barcode scanning, receipts, discounts, shift reports and multi-branch sales tracking.</p></div>
+<div class="svc"><span class="ic" aria-hidden="true">🍽️</span><h3>Restaurant management</h3><p>Table orders, kitchen display, menu management, split bills and daily sales reports.</p></div>
+<div class="svc"><span class="ic" aria-hidden="true">🏭</span><h3>Manufacturing &amp; production</h3><p>Work orders, BOM, shop-floor entry, production tracking, material issue and output reporting.</p></div>
+<div class="svc"><span class="ic" aria-hidden="true">📦</span><h3>Inventory & stock app</h3><p>Real-time stock counts, low-stock alerts, purchase entry and warehouse transfers on a phone.</p></div>
+<div class="svc"><span class="ic" aria-hidden="true">🛵</span><h3>Order & delivery app</h3><p>Customer ordering, order tracking, rider assignment and delivery status updates.</p></div>
+<div class="svc"><span class="ic" aria-hidden="true">🧑‍💼</span><h3>Sales & field app</h3><p>Orders, visits, collections and customer records for teams working outside the office.</p></div>
+<div class="svc"><span class="ic" aria-hidden="true">🔄</span><h3>ERP-connected apps</h3><p>Mobile apps that link to Oracle EBS or Fusion for scanning, approvals and live transaction data.</p></div>
+</div>
+</div></section>
+
+<section id="it-services"><div class="wrap">
+<h2>IT services that keep your business running</h2>
+<p class="intro">Software, support and infrastructure delivered by the same team that understands your ERP, so your systems work together instead of in isolation.</p>
+<div class="services">
+<div class="svc"><span class="ic" aria-hidden="true">&lt;/&gt;</span><h3>Custom software &amp; web development</h3><p>Web applications, portals and internal tools built around how your teams actually work.</p></div>
+<div class="svc"><span class="ic" aria-hidden="true">🛠️</span><h3>IT support &amp; managed services</h3><p>Day-to-day system support, issue resolution, monitoring and maintenance for your IT environment.</p></div>
+<div class="svc"><span class="ic" aria-hidden="true">🌐</span><h3>Cloud &amp; infrastructure</h3><p>Cloud adoption, system migration, hosting and infrastructure planning for growing organizations.</p></div>
+<div class="svc"><span class="ic" aria-hidden="true">🔗</span><h3>Integration &amp; automation</h3><p>APIs, data exchange, process automation and custom solutions that connect ERP with your other systems.</p></div>
+<div class="svc"><span class="ic" aria-hidden="true">▤</span><h3>Reporting &amp; data</h3><p>Business reporting, data migration, transaction analysis and practical management information.</p></div>
+<div class="svc"><span class="ic" aria-hidden="true">🎓</span><h3>Training &amp; adoption</h3><p>User training and documentation that help teams adopt new systems with confidence.</p></div>
+</div>
+</div></section>
+
+<section id="services"><div class="wrap">
+<h2>Oracle solutions built around your business</h2>
+<p class="intro">From implementation and configuration to support, integration and process automation, SYSTEMORIX helps organizations get more value from their ERP investment.</p>
+<div class="services">
+<div class="svc"><span class="ic" aria-hidden="true">☁️</span><h3>Oracle Fusion Cloud</h3><p>Functional consulting, implementation, configuration, testing, training and post-go-live support.</p></div>
+<div class="svc"><span class="ic" aria-hidden="true">◈</span><h3>Oracle EBS</h3><p>Oracle E-Business Suite consulting, enhancements, support, reporting and business process improvements.</p></div>
+<div class="svc"><span class="ic" aria-hidden="true">⚙️</span><h3>SCM &amp; Procurement</h3><p>Supply Chain, Purchasing, P2P, Supplier Management, Inventory and logistics process expertise.</p></div>
+<div class="svc"><span class="ic" aria-hidden="true">🏭</span><h3>Manufacturing</h3><p>Manufacturing process support covering work orders, BOM, WIP, costing and material availability.</p></div>
+</div>
+<h2 style="margin-top:72px;font-size:clamp(26px,3.4vw,38px)">Deep knowledge across core ERP processes</h2>
+<ul class="chips">
+<li>Procure-to-Pay (P2P)</li><li>Order-to-Cash (O2C)</li><li>Order Management</li><li>Purchasing</li><li>Inventory</li><li>Logistics</li><li>Manufacturing</li><li>Financials</li><li>Supplier Management</li><li>Data Migration</li><li>System Integration</li><li>User Training</li>
+</ul>
+</div></section>
+
+<section id="about" style="padding-top:0"><div class="wrap about">
+<div>
+<h2>Practical IT and ERP consulting with a business-first approach</h2>
+<p class="intro">SYSTEMORIX is an IT services and Oracle solutions brand helping organizations improve business processes, ERP operations, software systems and user adoption.</p>
+<ul class="checks">
+<li>Requirements gathering through deployment and support.</li>
+<li>Business-focused solutions that reduce manual work and improve transaction accuracy.</li>
+<li>Experience across Oracle Fusion Cloud and Oracle EBS environments.</li>
+<li>Flexible remote consulting for clients in Pakistan and international markets.</li>
+</ul>
+</div>
+<div class="panel">
+<h3>End-to-end project lifecycle</h3>
+<p class="steps">Requirements → Solution Design → Configuration → Integration → Testing → Deployment → Training → Support</p>
+<p>Industries: Manufacturing, Distribution, Trading, Supply Chain and other technology-driven organizations.</p>
+</div>
+</div></section>
+
+<div class="achieve" id="achievement"><section><div class="wrap grid">
+<div>
+<svg class="qr" viewBox="0 0 100 100" role="img" aria-label="QR code illustration" fill="currentColor">
+<path d="M0 0h30v30H0zM6 6v18h18V6zM10 10h10v10H10zM70 0h30v30H70zM76 6v18h18V6zM80 10h10v10H80zM0 70h30v30H0zM6 76v18h18V76zM10 80h10v10H10z"/>
+<path d="M38 4h8v8h-8zM52 4h8v8h-8zM38 18h8v8h-8zM56 20h8v8h-8zM4 38h8v8H4zM18 38h8v8h-8zM38 38h8v8h-8zM52 42h8v8h-8zM70 38h8v8h-8zM86 40h8v8h-8zM4 54h8v8H4zM24 54h8v8h-8zM42 54h8v8h-8zM60 56h8v8h-8zM78 54h8v8h-8zM38 72h8v8h-8zM54 74h8v8h-8zM70 70h8v8h-8zM88 72h8v8h-8zM40 88h8v8h-8zM62 90h8v8h-8zM80 88h8v8h-8z"/>
+</svg>
+<div class="gate"><span>IGP</span><span>OGP</span></div>
+</div>
+<div>
+<h2>QR-enabled gate pass automation</h2>
+<p class="intro" style="margin-bottom:24px">A practical example of turning an operational requirement into an integrated ERP process.</p>
+<p>Integrated QR code scanning with Oracle EBS to automate and streamline Inward Gate Pass (IGP) and Outward Gate Pass (OGP) processes.</p>
+<p>The solution helps improve transaction accuracy, reduce manual processing and strengthen control over material movement.</p>
+</div>
+</div></section></div>
+
+<div class="wrap">
+<section id="contact" class="contact">
+<h2>Let's discuss your ERP requirements</h2>
+<p class="intro">Tell us about your IT, software, Oracle implementation, support, integration or process automation requirement. We can start with a practical discussion of your current environment and goals.</p>
+<p class="callline">Call or WhatsApp: <a href="tel:+923312389677">+92 331 2389677</a></p>
+<p class="callline">Email: <a href="mailto:system.orix@gmail.com">system.orix@gmail.com</a> · <a href="mailto:info@systemorix.com">info@systemorix.com</a></p>
+<a class="btn primary" href="mailto:system.orix@gmail.com">Email SYSTEMORIX</a>
+</section>
+<footer><div class="cols">
+<div><strong>SYSTEMORIX</strong>IT Services &amp; Oracle Solutions</div>
+<div><strong>Email</strong><a href="mailto:system.orix@gmail.com">system.orix@gmail.com</a><br><a href="mailto:info@systemorix.com">info@systemorix.com</a></div>
+<div><strong>Mobile</strong><a href="tel:+923312389677">+92 331 2389677</a></div>
+<div><strong>Services</strong>IT services, mobile apps, POS, software development, Oracle Fusion, Oracle EBS, SCM, Procurement</div>
+<div><strong>Coverage</strong>Pakistan and remote international consulting</div>
+</div></footer>
+</div>
+</body>
+</html>
